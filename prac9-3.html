@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+        const myOwnEvent = () => {
+            alert("heyyy yeah 😎")
+        }
+        $(document).ready(function () {
+            $("#🆗").click(function () {
+                alert("Button clicked 😒")
+            })
+            $("#🙃").hover(function () {
+                $(this).css("background-color", "yellow")
+            }, function () {
+                $(this).css("background-color", "pink")
+
+            })
+            $("#▶").on("click", function () {
+                alert("The paragraph was clicked.")
+            })
+            $("#⏸").off("click", function () {
+                alert("the paragraph was clicked on purpose")
+            })
+            $("#⚛").click(function () {
+                $(this).trigger("click",function(){
+                    alert("heyyy boii ")
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <paradox>
+        HI there !! ✌✌ <br>
+        Deepak vishwakarma : 229749 <br>
+        Tyit : BscIT <br>
+    </paradox>
+    <button id="🆗">click me 😒</button>
+    <button id="⚛"> trigger</button> 
+    <button id="🎉">Events</button>
+</body>
+</html>

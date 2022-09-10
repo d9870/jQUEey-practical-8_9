@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $("#⬅").click(function () {
+                var str = $("pre").text()
+                alert(str)
+            })
+            $("#➡").click(function () {
+                $("pre").text("Deepak vishwakarma : 229749")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="⬅"> Get all paragraph's text </button>
+    <pre>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et numquam commodi voluptatum.
+            Unde veniam tempore aperiam amet autem, deleniti atque doloremque! Sapiente neque,
+            commodi doloribus dolor id ipsa consequatur ea.
+    </pre>
+    <button id="➡"> Set all paragraph's text </button>
+    <pre>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, harum!
+            Sunt culpa reprehenderit ducimus nesciunt tenetur sequi debitis. Exercitationem itaque dicta corrupti,
+            necessitatibus quis quos facere ex mollitia ducimus aliquid. Doloremque,
+    </pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $(".1️⃣").click(function () {
+                var str = $("div").text();
+                alert(str);
+            });
+            $(".2️⃣").click(function () {
+                $("div").html("<p> HI there !! ✌✌ <br>  Deepak vishwakarma : 229749 <br>  Tyit : BscIT <br></p> ")
+            })
+        });
+    </script>
+</head>
+<body>
+    <button class="1️⃣">Get Paragraph's HTML Contents</button>
+    <button class="2️⃣">Set Paragraph's HTML Contents</button>
+    <div>
+        <h1>Hello World!</h1>
+        <p>The quick <b>brown fox</b> jumps over the lazy dog.</p>
+    </div>
+</body>
+</html>
