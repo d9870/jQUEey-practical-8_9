@@ -85,11 +85,11 @@ class CRUD
     public static void main(String args [])
     {
         CRUDdata crud = new CRUDdata();
-        crud.insert();
-        crud.read();
-        crud.update();
-        crud.read();
-        crud.delete();
+        // crud.insert();
+        // crud.read();
+        // crud.update();
+        // crud.read();
+        // crud.delete();
         crud.read();
     }
 }

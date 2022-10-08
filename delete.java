@@ -13,8 +13,8 @@ public class delete
 		System.out.println("Collected to the database successfully");
 		MongoDatabase database=mongo.getDatabase("TYITDB1");
 		MongoCollection<Document> Collection=database.getCollection("TYITCOL");
-		System.out.println("Collection SampleCollection Selected successfully");
-		Collection.deleteOne(Filters.eq("id",1));
+		System.out.println("Collection Selected successfully");
+		Collection.deleteOne(Filters.eq("Rollno",229749));
 		System.out.println("Document deleted Successfully");
 	}
 }

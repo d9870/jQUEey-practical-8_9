@@ -15,11 +15,10 @@ public class update
 		System.out.println("Conneted to the database successfully");
 		DB db=mongo.getDB("TYITDB1");
 		DBCollection col=db.getCollection("TYITCOL");
-		DBObject query=new BasicDBObject("id",1);
+		DBObject query=new BasicDBObject("Rollno",229749);
 		DBObject update=new BasicDBObject();
 		update.put("$set",new BasicDBObject("likes",300));
-			WriteResult result=col.update(query,update);
-			mongo.close();
-		
+		WriteResult result=col.update(query,update);
+		mongo.close();
 	}
 }

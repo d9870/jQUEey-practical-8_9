@@ -15,12 +15,10 @@ public class insert
  	System.out.println("Collection TYITCOL selected successfully");
  
  	Document document=new Document();
- 	document.append("id",2);
- 	document.append("description","database");
- 	document.append("likes",200);
- 	document.append("url","http://www.oracle.com");
- 	document.append("by","OracleSQL");
- 	
+ 	document.append("id",1);
+	document.append("Name","Deepak");
+	document.append("Rollno",229749);
+ 	document.append("Age",20);
 	collection.insertOne(document);
 
  	System.out.println("Document inserted successfully");

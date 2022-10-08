@@ -1,4 +1,3 @@
-import collections
 from pymongo import MongoClient
 client = MongoClient('localhost',27017)
 db = client.TYITDB1
@@ -7,6 +6,6 @@ def retrieve():
     try:
         for studentinfo in collection.find():
             print(studentinfo)
-    except Exception:
-        print(str(Exception))
+    except Exception as e:
+        print(str(e))
 retrieve()
