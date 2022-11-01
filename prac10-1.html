@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Creating JSON </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var data={
+    "Name":"Deepak Vishwakarma",
+    "Rollno":229749,
+    "Sem":5
+    
+};
+document.writeln(JSON.stringify(data)+"<br/>");
+document.writeln(JSON.stringify(data,["Name","Rollno","Sem"])+"<br/>");
+document.writeln(JSON.stringify(data,["Name","Rollno","Sem"],5));
+</script>
+</body>
+
+</html>

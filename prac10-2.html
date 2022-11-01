@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>parsing</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var data = '{"name":"Deepak Vishwakarma","sem":5,"Couse":"BscIT"}';
+        var json_obj = JSON.parse(data, function (name, value) {
+            return value;
+        }
+        );
+        document.writeln(json_obj.name);
+        for (key in json_obj) {
+            document.write("</br>" + key + ":" + json_obj[key]);
+        }
+        var json_obj = JSON.parse(data, function (name, value) {
+            if (name == "sem") {
+                return undefined;
+            }
+            else {
+                return value;
+            }
+        }
+        );
+        for (key in json_obj) {
+            document.write("</br>" + key + ":" + json_obj[key]);
+        }
+    </script>
+</body>
+
+</html>
