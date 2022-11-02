@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>parsing</title>
+    <title>parsing@229749</title>
 </head>
 
 <body>
@@ -9,8 +9,7 @@
         var data = '{"name":"Deepak Vishwakarma","sem":5,"Couse":"BscIT"}';
         var json_obj = JSON.parse(data, function (name, value) {
             return value;
-        }
-        );
+        });
         document.writeln(json_obj.name);
         for (key in json_obj) {
             document.write("</br>" + key + ":" + json_obj[key]);
@@ -22,8 +21,7 @@
             else {
                 return value;
             }
-        }
-        );
+        });
         for (key in json_obj) {
             document.write("</br>" + key + ":" + json_obj[key]);
         }
